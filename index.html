@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <!--JQUERY MOBILE-->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--LEAFLET-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <!--NOUS-->
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>map();</script>
+
+</head>
+<body>
+<!-------------------------------------PRINCIPALE---------------------------------------->
+
+<div data-role="page" id="page1">
+    <div data-role="header" class="headerFooterGradiant">
+        <h1 class="headerFooterText">Festival d'été de</h1>
+    </div>
+    <div class="">
+        <img class="principaleImg" src="images/principale/PrincipaleQuebec.png"/>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>Et denique ei non et et et fuerit denique sine provincia nascetur non Nam sis non provincia cui designatus
+            diem designatus repente ianuario non repente decreta Kalendis antequam sortiri et in absurdum Quo decreta
+            provincia sine Proficiscetur licebit denique non.</p>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#programme">Le programme</a></li>
+            <li><a href="#artiste">Artiste</a></li>
+            <li><a href="#partenaire">Nos partenaires</a></li>
+            <li><a href="#video">Quelques vidéo</a></li>
+            <li><a href="#contact">Nous Contacter</a></li>
+        </ul>
+        <a href="#pageMap" data-role="button" data-mini="true" data-icon="forward"> Comment s'y rendre ?</a>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+        <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier 2019</h1>
+    </div>
+</div>
+
+<!----------------------------------LE PROGRAMME--------------------------------------->
+
+<div data-role="page" id="programme">
+    <div data-role="header" class="headerFooterGradiant">
+        <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+
+        <h1 class="headerFooterText">FEQ</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+
+        <h1>Programme</h1>
+        <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+            <div data-role="collapsible">
+                <h3>Jeudi 5 Juillet</h3>
+                <div class="divImageProgramme">
+                </div>
+                <p>Messis superbe ducunt ad superbus extum. Cum omnia ire, omnes lapsuses convertam magnum, audax solemes. Crescere una ducunt ad azureus amor. Pulchritudines potus!</p>
+                <a href="https://killy.co" data-role="button" data-mini="true" data-icon="info" width="25%">Lien web</a>
+            </div>
+            <div data-role="collapsible">
+                <h3>Vendredi 6 Juillet</h3>
+                <div class="divImageCorey"></div>
+                <a href="#popupCorey" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="flip"> Ecouter !
+
+                </a>
+                <p>Au milieu des années 1980, Corey Hart s’illustre sur la scène pop internationale avec des succès tels Sunglasses at Night, Boy in the Box et Never Surrender, qui a dominé le top 10 au Canada pendant plus de neuf semaines. L’artiste de 56 ans a remporté plusieurs trophées de l’ADISQ et des prix Juno tout au long de sa carrière, en plus d’être récemment intronisé au Temple de la musique canadienne. Toujours aussi charismatique, celui qui partage sa vie avec la chanteuse Julie Masse propose un survol de ses hits et vient même de lancer un nouvel extrait intitulé Dreaming Time Again. Une soirée d’ouverture sous le signe de la puissante nostalgie eighties.</p>
+
+                <div data-role="popup" id="popupCorey"  class="ui-content" width="100%">
+                    <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/corey-hart-essentials/pl.2623b4191e0149bfbc3a458ee54d0572?app=music"></iframe>                </div>
+            </div>
+            <div data-role="collapsible">
+                <h3>Samedi 7 Juillet</h3>
+                <p>À venir ..!</p>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+        <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier</h1>
+    </div>
+</div>
+<!-------------------------------------ARTISTE----------------------------------------->
+
+
+<div data-role="page" id="artiste">
+    <div data-role="header" class="headerFooterGradiant">
+        <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+
+        <h1 class="headerFooterText">FEQ</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h2>Artiste</h2>
+        <ul data-role="listview" data-inset="true">
+            <li class="listViewStyle">
+
+                <a href="#popup2frere" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">2 Frères
+                    <img src="images/artistes/2frere.png" height="80" width="80"/>
+                </a>
+                <div data-role="popup" id="popup2frere" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="https://2freres.com">Site web</a>
+                </div>
+            </li>
+            <li>
+                <a href="#popupAfricana" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">Africana Soul Sister
+                    <img src="images/artistes/africana.png" height="248" width="246"/>
+                </a>
+                <div data-role="popup" id="popupAfricana" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="https://www.audiogram.com/fr/artiste/afrikana-soul-sister">Site web</a>
+                </div>
+            </li>
+            <li>
+                <a href="#popupAir" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">Air Supply
+                    <img src="images/artistes/airsuply.png" height="248" width="246"/>
+                </a>
+                <div data-role="popup" id="popupAir" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="http://www.airsupplymusic.com">Site web</a>
+                </div>
+            </li>
+            <li>
+                <a href="#popupAlani" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">Ala.ni
+                    <img src="images/artistes/alani.png" height="248" width="246"/>
+                </a>
+                <div data-role="popup" id="popupAlani" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="https://www.alaniofficial.com">Site web</a>
+                </div>
+            </li>
+            <li>
+                <a href="#popupCeline" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">Céline Dion
+                    <img src="images/artistes/celine.png" height="248" width="246"/>
+                </a>
+                <div data-role="popup" id="popupCeline" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="https://www.celinedion.com/fr/accueil/">Site web</a>
+                </div>
+            </li>
+            <li>
+                <a href="#popupAdele" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">Adèle
+                    <img src="images/artistes/adele.png" height="248" width="246"/>
+                </a>
+                <div data-role="popup" id="popupAdele" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="http://adele.com/home/">Site web</a>
+                </div>
+            </li>
+            <li>
+                <a href="#popupU2" data-rel="popup" class="ui-btn  ui-corner-all ui-shadow ui-btn-inline " data-transition="pop">U2
+                    <img src="images/artistes/u2.png" height="248" width="246"/>
+                </a>
+                <div data-role="popup" id="popupU2" class="ui-content ">
+                    <p>Coordinatae de alter scutum, anhelare gluten!Ionicis tormentos observare in caelos! Assimilatios sunt fluctuis de neuter habitio. Guttus de pius cedrium, convertam scutum! Est castus species, cesaris. Lacteas potus!</p>
+                    <a href="https://www.u2.com">Site web</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+        <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier</h1>
+    </div>
+
+</div>
+    <!----------------------------------NOS PARTENAIRES--------------------------------------->
+<div data-role="page" id="partenaire">
+    <div data-role="header" class="headerFooterGradiant">
+        <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+
+        <h1 class="headerFooterText">FEQ</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h2>Nos partenaires</h2>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <div class="ui-bar">
+                    <a class="imgGridBell" href="https://www.bell.ca/Accueil">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="ui-bar">
+                    <a class="imgGridCors" href="https://molsoncoors.com/">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-c">
+                <div class="ui-bar">
+                    <a class="imgGridDej" href="https://www.desjardins.com/">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-a">
+                <div class="ui-bar">
+                    <a class="imgGridLoto" href="https://loteries.lotoquebec.com/fr/accueil">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="ui-bar">
+                    <a class="imgGridHQ" href="http://www.hydroquebec.com/residentiel/">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-c">
+                <div class="ui-bar">
+                    <a class="imgGridLait" href="http://www.lafamilledulait.com/">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-c">
+                <div class="ui-bar">
+                    <a class="imgGridSirus" href="https://www.siriusxm.ca/fr/">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-c">
+                <div class="ui-bar">
+                    <a class="imgGridRio" href="https://www.riotinto.com/">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-c  ">
+                <div class="ui-bar ">
+                    <a class="imgGridSaq" href="https://www.saq.com/content/SAQ/fr.html">&nbsp;</a>
+                </div>
+            </div>
+            <div class="ui-block-a ui-grid-b ui-grid-c">
+                <div class="ui-bar">
+                    <a class="imgGridFord" href="https://www.ford.ca">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+        <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier 2019</h1>
+    </div>
+</div>
+    <!----------------------------------QUELQUES VIDÉO--------------------------------------->
+<div data-role="page" id="video">
+    <div data-role="header" class="headerFooterGradiant">
+        <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+
+        <h1 class="headerFooterText">FEQ</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h2>Vidéo 2017</h2>
+        <div class="divVideo">
+            <iframe src="https://www.youtube.com/embed/rrvFv6j3-sM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="100%" allowfullscreen></iframe>
+        </div>
+        <div class="divVideo">
+            <iframe src="https://www.youtube.com/embed/G0jz22AoAbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="100%" allowfullscreen></iframe>
+        </div>
+        <div class="divVideo">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rrvFv6j3-sM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+        <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier 2019</h1>
+    </div>
+
+</div>
+
+
+    <!----------------------------------NOUS CONTACTER--------------------------------------->
+
+
+<div data-role="page" id="contact">
+    <div data-role="header" class="headerFooterGradiant">
+        <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+        <h1 class="headerFooterText">FEQ</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h2>Nous donner un FeedBack </br> FEQ</h2>
+        <form id="formulaire" name="formulaire" method="POST">
+            <label for="text-nom" class="margeTextInput">Votre nom</label>
+            <input type="text" data-clear-btn="true" name="text-nom" id="text-nom" value="" class="required">
+            <label for="text-email">Email</label>
+            <input type="email" data-clear-btn="true" name="text-nom" id="text-email" value="" class="required" >
+            <label for="slider">Aimez vous le festival ?</label>
+            <input type="range" name="slider" id="slider" min="0" max="10" value="10" class="required">
+            <label for="flip-1">Avez vous deja participé au FEQ ?</label>
+            <select class="flip-1" name="flip-1" id="flip-1" data-role="flipswitch" data-mini="true" class="required">
+                <option value="Non">Non</option>
+                <option value="Oui">Oui</option>
+            </select>
+            </br>
+            <label for="flip-2">Reviendrez-vous ?</label>
+            <select class="flip-2" name="flip-2" id="flip-2" data-role="flipswitch" data-mini="true" class="required">
+                <option value="Non">Non</option>
+                <option value="Oui">Oui</option>
+            </select>
+            </br>
+            <label for="textarea-commentaire">D'autre remarques pour les organisateurs ? </label>
+                <textarea name="textarea-commentaire" id="textarea-commentaire"></textarea>
+            <br/>
+            <a  onclick="formInfo()" href="#dialog" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">Envoyer</a>
+        </form>
+    </div>
+
+    <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+        <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier 2019</h1>
+    </div>
+    </div>
+
+    <!-----------------------------------------DIALOG-------------------------------------------->
+    <div data-role="page" id="dialog">
+        <div data-role="header" class="headerFooterGradiant">
+            <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+
+            <h1 class="headerFooterText">FEQ</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h2 style="text-align: center">Merci de vos remarques !</h2>
+        </div>
+
+        <div id="wrapper">
+            <div id="dialogDiv">
+
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="headerFooterGradiant">
+            <h1 class="headerFooterText">&copy; Fait par Nadir Pelletier 2019</h1>
+        </div>
+
+    </div>
+
+    <!----------------------------------COMMENT S'Y RENDRE--------------------------------------->
+
+
+    <div data-role="page" id="pageMap">
+        <div data-role="header"  class="headerFooterGradiant" data-position="fixed">
+            <a href="#page1" data-role="button" data-mini="true" data-icon="forward" class="buttonPrincipale">Principale</a>
+            <h1 class="headerFooterText">Carte des scènes</h1>
+        </div>
+
+
+        <div id="map" data-role="main" class="ui-content" class="divMap"></div>
+
+
+    </div>
+</body>
+</html>

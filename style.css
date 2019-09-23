@@ -1,0 +1,213 @@
+.headerFooterGradiant
+{
+    background-image: linear-gradient(#9500ff, #ff0093);
+}
+.buttonPrincipale
+{
+    background-image: linear-gradient(#ff0093,#9500ff);
+    color: white;
+    border: white;
+    text-shadow: none;
+}
+
+.headerFooterText
+{
+    color: white;
+    font-size: large;
+}
+.principaleImg
+{
+    padding-top: 20px;
+    height:100%;
+    width:100%;
+}
+
+.margeTextInput
+{
+    margin: auto;
+    text-align: left;
+}
+
+.listViewStyle
+{
+    min-width: max-content;
+}
+
+.imageProgramme
+{
+    size: auto;
+}
+
+.divImageProgramme
+{
+    width: auto;
+    height: 180px;
+    background-image: url(images/programmes/Kelly.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divImageCorey
+{
+    width: auto;
+    height: 180px;
+    background-image: url(images/programmes/CoreyHart.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.divVideo {
+    margin:10px ;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.divVideo iframe,
+.divVideo object,
+.divVideo embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.ui-grid-b img {
+    width  : 100%;
+    height : 100%;
+}
+
+.imgGridBell
+{
+    /*width: 80px;*/
+    /*height: 80px;*/
+    background-image: url(images/sponsor/Bell.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridCors
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/coors.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridDej
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/desjardin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridLoto
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/lotoquebec.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridHQ
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/hydro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridLait
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/lait.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridSirus
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/sirius.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridFord
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/ford.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridSaq
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/saq.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imgGridRio
+{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-image: url(images/sponsor/rioTinto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divMap
+{
+    height: 100%;!important;
+    display: inline-block;
+}
+table
+{
+    border-collapse: collapse;
+}
+
+table, th, td
+{
+    border: 1px solid fuchsia;
+    font-size: small;
+}
+#wrapper
+{
+    text-align: center;
+}
+#dialogDiv
+{
+    display: inline-block;
+}
+
+.leaflet-container
+{
+
+    height: 100%;!important;
+    width: 100%;!important;
+    display: inline-block;
+    position: absolute;
+}
